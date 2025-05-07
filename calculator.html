@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>  
+    <title>Calculator</title>
+    <link rel="stylesheet" href="styles.css" >
+</head>
+<body className="body">
+    <div id="container">
+        <h1>CALCULATOR</h1>
+        <input type="text" id="display" value="0" disabled><br><br>
+        <div id="grid-container" >
+            <button onclick="clearDisplay()" style="color: rgb(88, 4, 4);">C</button>
+            <button onclick="press('%')" style="color: rgb(70, 70, 142);">%</button>
+            <button style="color: rgb(70, 70, 142);" onclick="backspace()">⌫</button>
+            <button onclick="press('/')">➗</button>
+            
+            <button onclick="press('7')">7</button>
+            <button onclick="press('8')">8</button>
+            <button onclick="press('9')">9</button>
+            <button onclick="press('*')" style="color: rgb(70, 70, 142);">✖️</button>
+          
+            <button onclick="press('4')">4</button>
+            <button onclick="press('5')">5</button>
+            <button onclick="press('6')">6</button>
+            <button onclick="press('-')" style="color: rgb(70, 70, 142);">➖</button>
+        
+            <button onclick="press('1')">1</button>
+            <button onclick="press('2')">2</button>
+            <button onclick="press('3')">3</button>
+            <button onclick="press('+')" style="color: rgb(70, 70, 142);">➕</button>
+        
+            <button onclick="press('00')">00</button>
+            <button onclick="press('0')">0</button>
+            <button onclick="press('.')">•</button>
+            
+            <button id="equals" onclick="calculate()" style="color: rgb(70, 70, 142);" >🟰</button>
+        </div>
+    </div>
+
+    <script>
+        let display = document.getElementById('display');
+        function press(value) {
+            if(display.value === '0') {
+                display.value = value;
+            } else {
+                display.value += value;
+            }
+        }
+        function clearDisplay() {
+            display.value = '0';
+        }
+        function backspace() {
+            display.value = display.value.slice(0, -1);
+        }
+        function calculate() {
+            try {
+                display.value = eval(display.value);
+            } catch {
+                display.value = 'Error';
+            }
+        }
+    </script>
+</body>
+</html>

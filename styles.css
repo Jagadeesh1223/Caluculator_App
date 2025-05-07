@@ -1,0 +1,66 @@
+body {
+    margin: 50px;
+    display: flex;
+    justify-content: center;
+    background-color: antiquewhite;
+    
+}
+h1 {
+    color:white;
+    display: flex;
+    justify-content: center;
+}
+#container {
+    padding: 20px;
+    border: 3px solid green;
+    border-radius: 30px;
+    height: 550px;
+    width: 380px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgb(37, 19, 19);
+    box-shadow: -10px 10px 10px rgb(10, 10, 91);
+}
+
+#container input {
+    padding: 20px;
+    border: 1px solid red;
+    border-radius: 20px;
+    display: flex;
+    text-align: right;
+    font-size: 40px;
+    color: black;
+    background-color: rgb(229, 224, 224);
+    
+}
+
+#grid-container  {
+    width: 100%;
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: center;
+    gap: 5px;
+}
+
+button {
+    padding: 15px;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    font-weight: bold;
+    background-color: rgb(174, 165, 165);
+    box-shadow: -3px  3px 4px white;
+    font-size: 20px;
+}
+
+button:active {
+    box-shadow: inset -5px  5px 4px black;
+    
+  }
+
+
+#equals {
+    background-color: rgb(142, 23, 23);
+    color: white;
+}
