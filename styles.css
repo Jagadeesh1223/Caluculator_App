@@ -3,6 +3,7 @@ body {
     overflow-x: hidden;
     display: flex;
     justify-content: center;
+    background-color: antiquewhite;
 }
 h1 {
     color:white;
@@ -20,7 +21,8 @@ h1 {
     padding: 20px;
     border: 3px solid green;
     border-radius: 30px;
-    height: 550px;
+    height: 90%;
+    max-height: 550px;
     max-width: 400px;
     width: 90%;
     display: flex;
