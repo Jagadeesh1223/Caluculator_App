@@ -1,10 +1,11 @@
 body {
-    margin: 0;
-    overflow-x: hidden;
+    margin: 100px;
     display: flex;
     justify-content: center;
+    align-items: center;
     background-color: antiquewhite;
 }
+
 h1 {
     color:white;
     display: flex;
@@ -21,7 +22,7 @@ h1 {
     padding: 20px;
     border: 3px solid green;
     border-radius: 30px;
-    height: 90%;
+    height: 10%;
     max-height: 550px;
     max-width: 400px;
     width: 90%;
