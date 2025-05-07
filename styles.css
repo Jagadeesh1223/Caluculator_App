@@ -4,6 +4,8 @@ body {
     justify-content: center;
     align-items: center;
     background-color: antiquewhite;
+    height: 0;
+    width: 90%;
 }
 
 h1 {
