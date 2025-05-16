@@ -27,7 +27,7 @@ h1 {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background-color: green;
+    background-color: rgb(37, 19, 19);
     box-shadow: -10px 10px 10px rgb(10, 10, 91);
 }
 
